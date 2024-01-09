@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoenliche Seite von Olga Dyukareva Webentwicklerin</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+
+    
+</head>
+<body >
+    
+   <div class="wrapper" id="wrapper">
+     <header class="header">
+        <div class="logo"> ODyuk</div>
+        <ul class="menu-bar">
+            <li class="menu-item">
+                <a href="./index.html" class="menu-link">Startseite</a>
+            </li>
+            <li class="menu-item">
+                <a href="./busyboard.html" class="menu-link">kleine Projekte</a>
+            </li>
+            <li class="menu-item">
+                <a href="./meinewerke.html" class="menu-link">Projekte</a>
+            </li>
+            <li class="menu-item">
+                <a href="./kontakte.html" class="menu-link"> Kontakte</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <span></span>
+        </div>
+     </header>
+     <section class="intro">
+        <div class="intro-info">
+            <h1 class="intro-vorstellen">
+                Olga Diukarieva <br> 
+                Webentwicklung
+            </h1>
+            <div class="intro-text">
+            
+               <h2>Hallo, mein Name ist Olga, </h2>  
+            
+            
+            <p>ich habe einen Abschluss in Philologie, aber ich habe mich entschieden, 
+                meinen Beruf zu wechseln und Webentwicklerin zu werden, weil mir der kreative
+                 und dynamische Charakter dieser Arbeit gefällt. Ich habe
+                  erfolgreich einen Kurs in Webentwicklung abgeschlossen,
+                   wo ich die notwendigen Fähigkeiten und Kenntnisse erworben
+                    habe, um moderne Webanwendungen zu erstellen.</p>
+            <p>Ich beherrsche Technologien wie HTML, CSS, JavaScript, React, 
+                Node.js, Git und andere. Ich lerne ständig neue Tools
+                 und Frameworks, um meine Fähigkeiten zu verbessern und meine Möglichkeiten zu erweitern.</p>
+            <p>Vielen Dank für Ihre Aufmerksamkeit! Vergessen Sie nicht, meinen Lebenslauf herunterzuladen,
+                 wenn Ihnen mein Portfolio gefallen hat.</p>
+                 </div>
+            <a href="./Lebenslauf.doc" download>
+                <button class=" btn daten-btn download-btn">Lebenslauf herunterladen</button>
+            </a>
+        </div>
+    
+        <div class="intro-foto">
+            <img src="./images/my-foto.png" alt="mein Foto" class="my-image">
+        </div>
+     </section>
+     <section class="busyboard">
+        <h2 class="werke-title">
+            Kleine Projekte
+        </h2>
+        <div>
+        <div class="section-wrap">
+            <div class="wrap-item">
+                <h2 class="tools">
+                    Es gibt kleine schöne Sachen, die eine Webseite besser, dynamischer und funktionaler machen.
+                </h2>
+            </div>
+            <div class="wrap-item">
+                <button class=" btn busyboard-btn" type="text" >
+                    <a href="./busyboard.html" class="busyboard-btn-link">Mehr anzeigen</a>
+                </button>
+            </div>
+        </div>
+
+        <div class="wrap-tools">
+            <div class="tools-item">
+                <h3 class="tool-title">
+                    Taschenrechner
+                </h3>
+                <p class="tool-text">
+                    Diesen Taschenrecnner habe ich mit Hife von der eval-Function erstellt
+                </p>
+                <div class="container">
+                    <div class="item input">
+                        <form name="form">
+                            <input type="text"name="textview" readonly>
+                        </form>
+                    </div>
+                    <div class="item clean" onclick="clean()">C</div>
+                    <div class="item back" onclick="back()">&larr;</div>
+                    <div class="item"onclick="insert('+')">+</div>
+                    <div class="item"onclick="insert('-')">-</div>
+                    <div class="item"onclick="insert('*')">&times;</div>
+                    <div class="item"onclick="insert('/')">&divide;</div>
+                    <div class="item"onclick="insert('7')">7</div>
+                    <div class="item"onclick="insert('8')">8</div>
+                    <div class="item"onclick="insert('9')">9</div>
+                    <div class="item"onclick="insert('(')">(</div>
+                    <div class="item"onclick="insert('4')">4</div>
+                    <div class="item"onclick="insert('5')">5</div>
+                    <div class="item"onclick="insert('6')">6</div>
+                    <div class="item"onclick="insert(')')">)</div>
+                    <div class="item"onclick="insert('1')">1</div>
+                    <div class="item"onclick="insert('2')">2</div>
+                    <div class="item"onclick="insert('3')">3</div>
+                    <div class="item equal" onclick="equal()">=</div>
+                    <div class="item zero" onclick="insert('0')">0</div>
+                    <div class="item" onclick="insert('.')">.</div>
+                </div>
+            </div>
+            <div class="tools-item">
+                <h3 class="tool-title">
+                    Bildershau
+                </h3>
+                <p class="tool-text">
+                    Schöne Bider machen jede Webseite attraktiver
+                </p>
+                <div class="slider">
+                    <img src="./images/schau-1.jpg" alt="Bild 1" class= "schaubilder active">
+                    <img src="./images/schau-2.jpg" alt="Bild 2" class= "schaubilder"> 
+                    <img src="./images/schau-3.jpg" alt="Bild 3" class="schaubilder">  
+                    <img src="./images/schau-4.jpg" alt="Bild 4" class="schaubilder">
+                    <img src="./images/schau-5.jpg" alt="Bild 5" class="schaubilder">
+                    <button id="prev"class="prev" onclick="prevSlide()">&#10094;</button>
+                    <button id="next" class="next" onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>   
+        </div>
+     </section>
+     <section class="werke">
+        <h2 class="werke-title">
+            Meine Projekte
+        </h2>
+     <div class="meine-werke">
+        <div class="section-wrap">
+            <div class="wrap-item">
+                
+                    <h2 class="tools">
+                    Moderne Web-Technologien ermöglichen es, Websites und Anwendungen 
+                    einfach und schnell zu machen. Ich habe meine Anwendungen mit Hilfe von
+                     Frameworks und erweiterten JavaScript-Funktionen erstellt.
+                    </h2>
+            
+                
+            </div>
+            <div class="wrap-item">
+                <button class=" btn busyboard-btn" type="text" >
+                    <a href="./meinewerke.html" class="busyboard-btn-link">Mehr anzeigen</a>
+                </button>
+            </div>
+        </div>
+        <div class="wrap-tools">
+            <div class="tools-item projekt-item">
+                <h3 class="tool-title">
+                   Kontaktverwaltung
+               </h3>
+               <p class="tool-text">
+                 Frontend von der Kontaktverwaltung-App mit Hilfe von React
+               </p>
+               <div class="tools-img-item">
+                   <a href="#!" class="tool-img-link">
+                   <img src="./images/projekt0.jpg" alt="dashboard" class="tool-img">
+               </a>
+               </div>
+             
+           </div>
+           <div class="tools-item projekt-item">
+            <h3 class="tool-title">
+               Dashboard mit Diagrammen
+            </h3>
+            <p class="tool-text">
+             Ich habe dieses Daschbord mit Hilfe von Zingchart Angular und Materials gemacht
+            </p>
+            <div class="tools-img-item">
+            <a href="#!" class="tool-img-link">
+                <img src="./images/projekt5.jpg" alt="Bildschau" class="tool-img">
+            </a>
+            </div>
+         </div>
+            
+        </div>
+        </div>
+     </section>
+    
+     <footer class="footer">
+        <button class=" btn contact-btn"onclick="location.href='mailto:olgadjuk3@gmail.com'">E-Mail schreiben</button>
+        <button class="btn daten-btn">
+            <a href="./kontakte.html"> Kontakte</a>
+        </button>
+     </footer>
+   </div>
+ 
+<script src="./javascript/main.js"></script>
+<script src="./javascript/slider.js"> </script> 
+</body>
+</html>
